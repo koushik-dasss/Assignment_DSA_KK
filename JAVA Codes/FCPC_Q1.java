@@ -1,4 +1,4 @@
-//optimized code (exception for solar year)
+// optimized code (exception for solar year)
 
 import java.util.Scanner;
 public class FCPC_Q1 {
