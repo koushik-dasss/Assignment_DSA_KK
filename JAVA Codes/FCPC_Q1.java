@@ -1,10 +1,33 @@
+//optimized code (exception for solar year)
+
 import java.util.Scanner;
 public class FCPC_Q1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter an integer:");
-        int k = sc.nextInt();
-        System.out.println("int is:" + k);
-         
+        System.out.print("Enter year:");
+        int year = sc.nextInt();
+        if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) { 
+            System.out.println(year + " is a leap year");
+        } else {
+            System.out.println(year + " is not a leap year");
+        }
+// brute force solution
+        
+        
+        if (year%4 == 0) { 
+            System.out.println(year + " is a leap year");
+        } else {
+            System.out.println(year + " is not a leap year");
+        }
+        
+
+
+
+
     }
 }
+
+
+
+
+

@@ -1,3 +1,4 @@
+# Brute force solution
 year=int(input("Enter year:"))
 if year%4==0:
     print(year,"is a leap year")
@@ -5,7 +6,7 @@ else:
     print(year,"is not a leap year")
 
 
-#Exception for solar year (optimised code )
+#Exception for solar year (optimized code )
 year = int(input("Enter year:"))
 
 if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
